@@ -40,7 +40,7 @@
 <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
 <script>
 // ⚠️ 部署時，請將下方的 localhost 替換為您的 Render 網址
-const socket = io('https://big2-server-hwws.onrender.com:3000'); 
+const socket = io('https://big2-server-hwws.onrender.com'); 
 
 let myPlayerId = localStorage.getItem('big2_playerId');
 if (!myPlayerId) { myPlayerId = 'player_' + Math.random().toString(36).substr(2, 9); localStorage.setItem('big2_playerId', myPlayerId); }
@@ -125,4 +125,5 @@ function pass() {
 }
 </script>
 </body>
+
 </html>
